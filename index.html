@@ -345,6 +345,14 @@
     background:linear-gradient(165deg, var(--navy-2), var(--navy) 55%, rgba(195,161,97,.25) 150%);
     position:relative;
     border:1px solid var(--navy-line);
+    overflow:hidden;
+  }
+  .portrait img{
+    position:relative; z-index:1;
+    width:100%; height:100%;
+    object-fit:contain;
+    padding:14%;
+    box-sizing:border-box;
   }
   .portrait::after{
     content:'';
@@ -536,7 +544,7 @@
   <!-- ABOUT -->
   <section id="about" class="section-dark">
     <div class="wrap about-grid">
-      <div class="portrait"></div>
+      <div class="portrait"><img src="assets/portrait/author-portrait.png" alt="菜兒Chai 彈吉他插畫" loading="lazy"></div>
       <div class="about-columns">
         <p class="eyebrow about-eyebrow-shared" data-i18n="about_eyebrow">About</p>
         <div class="about-col">
@@ -646,7 +654,7 @@
     buy: { zh: '購買', en: 'Buy' },
     p1_title: { zh: '6・2指彈演奏譜：吉他音樂選輯', en: '6\u00b72 Fingerstyle Score: A Guitar Music Collection' },
     p1_desc: { zh: '適合喜愛清新民謠曲風的吉他練習者。', en: 'Great for guitarists who love a fresh, folk-style sound.' },
-    p3_title: { zh: '真的好想跟吉他指板變熟啊！<span class="subtitle">絕對實用的音階與和弦記憶筆記</span>', en: 'Getting Comfortable with the Fretboard!<span class="subtitle">Practical Notes on Scales &amp; Chords</span>' },
+    p3_title: { zh: '真的好想跟吉他指板變熟啊！<span class="subtitle">絕對實用的音階與和弦記憶筆記</span>', en: 'Mastering the Guitar Fretboard<span class="subtitle">Essential Scale and Chord Memory Notes</span>' },
     p3_desc: { zh: '寫給希望更了解吉他指板運作邏輯的你。', en: 'For anyone who wants to truly understand how the fretboard works.' },
     discount_tag: { zh: '限時優惠', en: 'Limited-time offer' },
     about_eyebrow: { zh: 'About', en: 'About' },
